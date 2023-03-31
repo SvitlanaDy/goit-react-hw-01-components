@@ -1,0 +1,8 @@
+.statistics{
+    display:flex;
+    
+}
+
+.statList{
+    list-style:none;  
+}

@@ -1,0 +1,15 @@
+.isOnline{
+    background-color:green;
+    width: 16px;
+    height: 16px;
+border-radius: 50%;
+display: block;
+}
+
+.isOffline{
+    background-color:red;
+    width: 16px;
+    height: 16px;
+border-radius: 50%;
+display: block;  
+}
