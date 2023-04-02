@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-const Profile = ({ user: { username, tag, location, avatar, stats, } }) => {
+const Profile = ({ user:{ username, tag, location, avatar, stats, statsItem, } }) => {
     return (
       <div className={css.profile}>
 
@@ -15,18 +15,18 @@ const Profile = ({ user: { username, tag, location, avatar, stats, } }) => {
         <div className={css.bottomContainer}>
 
           <ul className={css.stats}>
-            <li>
+            <li className={statsItem}>
             <p className={css.label}>Followers</p>
             <h2 className={css.quantity}>{stats.followers}</h2>
           </li>
 
-          <li>
+          <li className={statsItem}>
             <p className={css.label}>Views</p>
-            <h2 className={css.label}>{stats.views}</h2>
+            <h2 className={css.quantity}>{stats.views}</h2>
           </li>
 
-          <li>
-            <p className={css.descTitle}>Likes</p>
+          <li className={statsItem}>
+            <p className={css.label}>Likes</p>
             <h2 className={css.quantity}>{stats.likes}</h2>
           </li>
           </ul>
@@ -39,7 +39,7 @@ const Profile = ({ user: { username, tag, location, avatar, stats, } }) => {
   
   Profile.propTypes = {
     user: PropTypes.shape({
-      id:PropTypes.string.isRequired,
+      id:PropTypes.string,
       username: PropTypes.string.isRequired,
       tag: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,

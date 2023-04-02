@@ -1,9 +1,32 @@
+.item {
+    display: flex;
+    gap: 8px;
+    background-color: rgb(241, 185, 214);
+    width: 250px;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid black;
+  }
+
+.avatar{
+    border: 1px solid black;   
+}
+
+
+.name{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+
 .isOnline{
     background-color:green;
     width: 16px;
     height: 16px;
 border-radius: 50%;
 display: block;
+text-align: center;
 }
 
 .isOffline{
@@ -11,5 +34,6 @@ display: block;
     width: 16px;
     height: 16px;
 border-radius: 50%;
-display: block;  
+display: block; 
+text-align: center; 
 }
